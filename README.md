@@ -10,10 +10,32 @@
 
 This section describes how to work with this project using **Git**, **GitHub**, and **VS Code**.
 
-### 🪄 1️⃣ Clone the Repository
+### 🪄 1️⃣ Clone the Repository ###
 
-Open your terminal (or VS Code terminal):
+### Open your terminal (or VS Code terminal):###
 
 ```powershell
 git clone https://github.com/JulieMammen/mCode-Breast-Carcinoma-mapping.git
 cd mCode-Breast-Carcinoma-mapping
+```
+### Set Up Virtual Environment ###
+```python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+.\.venv\Scripts\Activate.ps1
+```
+# Install dependencies:
+```python -m pip install -r requirements.txt```
+
+# Make Changes in VS Code
+File → Open Folder → C:\mCODE\mCode-Breast-Carcinoma-mapping
+# Add or edit scripts under scripts/ Save your work (Ctrl + S)
+###
+### Check What’s New
+###
+```git status
+```
+### Stage and Commit Your Work ###
+```git add .
+git commit -m "Add mapping_api.py to load IDC dataset"
+```
+
