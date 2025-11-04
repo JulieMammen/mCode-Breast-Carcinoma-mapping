@@ -1,6 +1,8 @@
 # mCODE-Breast-Carcinoma-mapping
 ## BreastCancer-FHIR Profiler
-### mCode: Mapping Breast Cancer Data to FHIR Breast cancer is one of the deadliest diseases out there, but good data standards-like FHIR-can help. This repo shows how to take raw, messy infiltrating ductal carcinoma records, clean them, convert ICD-10 codes to SNOMED using UMLS API, and bundle 'em up into FHIR resources.  ###
+###
+mCode: This repo shows how to take raw, messy infiltrating ductal carcinoma records, clean them, convert ICD-10 codes to SNOMED using UMLS API, and bundle 'em up into FHIR resources 
+###
 ### How to run it
 1. Clone: git clone https://github.com/JulieMammen/mCode.git
 2. Install: pip install -r requirements.txt[requests for UMLS pulls, pandas for profiling, fhir.resources for building bundles, .env]
@@ -27,13 +29,15 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 ```python -m pip install -r requirements.txt```
 
 # Make Changes in VS Code
-File → Open Folder → C:\mCODE\mCode-Breast-Carcinoma-mapping
-# Add or edit scripts under scripts/ Save your work (Ctrl + S)
-###
-### Check What’s New
-###
-```git status
+File → Open Folder → C:\mCODE\mCode-Breast-Carcinoma-mapping.
+Add or edit scripts under scripts/ Save your work (Ctrl + S)
+#
+### 
+Check What’s New
 ```
+git status
+```
+###
 ### Stage and Commit Your Work ###
 ```git add .
 git commit -m "Add mapping_api.py to load IDC dataset"
